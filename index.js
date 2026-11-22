@@ -38,7 +38,7 @@ const applicationsCollection = db.collection("applications");
 const paymentCollection = db.collection("payments");
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.status(200).json({message: "Welcome to MentorLagbe Server"});
 });
 
 const verifyToken = async (req, res, next) => {
